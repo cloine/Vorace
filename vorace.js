@@ -10,7 +10,7 @@ function setup() {
   describe(
     `Black canvas that reflects the lines drawn within it in ${symmetry} sections.`
   );
-  createCanvas(windowWidth, windowHeight);
+  let cnv = createCanvas(windowWidth, windowHeight);
 
   function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
