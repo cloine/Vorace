@@ -14,3 +14,4 @@ Le fonctionnement de la page est basé sur deux modules disponibles sur [p5js](h
 * [Deezer](https://link.deezer.com/s/33yaQoD6a6obrC1ophFW3)
 
 ![Vorace](./assets/vorace.jpg)
+Un grand merci à Jayce Salez pour son aide.
