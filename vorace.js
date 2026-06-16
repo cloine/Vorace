@@ -10,7 +10,7 @@ function setup() {
   describe(
     `Black canvas that reflects the lines drawn within it in ${symmetry} sections.`
   );
-  let cnv = createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight);
 
   function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
@@ -45,7 +45,7 @@ function draw() {
         for (let i = 0; i < symmetry; i++) {
           rotate(angle);
           stroke(255);
-          strokeWeight(3);
+          strokeWeight(5);
           line(lineStartX, lineStartY, lineEndX, lineEndY);
           push();
           scale(1, -1);
