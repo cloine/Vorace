@@ -45,7 +45,7 @@ function draw() {
         for (let i = 0; i < symmetry; i++) {
           rotate(angle);
           stroke(255);
-          strokeWeight(3);
+          strokeWeight(5);
           line(lineStartX, lineStartY, lineEndX, lineEndY);
           push();
           scale(1, -1);
