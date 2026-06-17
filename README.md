@@ -2,6 +2,7 @@
 
 "Vorace" est un morceau de Cloine, composé entièrement de sa voix modifiée pour créer un paysage sonore oppressant et envoûtant à la fois.
 Cette page propose une façon différente d'écouter la musique. Vous pouvez dessiner une forme kaléidoscopique à la l'aide votre souris ou de votre doigt sur l'écran, et selon sa position, le son réagira en accélèrant ou en ralentissant.
+Ce projet a été réalisé dans le cadre d'une exposition.
 
 Le fonctionnement de la page est basé sur deux modules disponibles sur [p5js](https://p5js.org) :
 * [Kaleidoscope](https://p5js.org/examples/repetition-kaleidoscope/)
