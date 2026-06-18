@@ -1,5 +1,9 @@
 "use strict";
 
+if (!p5.AudioIn.enabled) {
+  alert("Veuillez activer l'audio dans votre navigateur s'il vous plaît.");
+}
+
 let audioPlayer;
 let symmetry = 3;
 let angle = 360 / symmetry;
