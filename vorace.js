@@ -1,7 +1,10 @@
 "use strict";
 
-if (!p5.AudioIn.enabled) {
-  alert("Veuillez activer l'audio dans votre navigateur s'il vous plaît.");
+if (!sessionStorage.getItem('alertDisplayed')) {
+
+    alert("Veuillez activer l'audio dans votre navigateur s'il vous plaît.");
+
+    sessionStorage.setItem('alertDisplayed', 'true');
 }
 
 let audioPlayer;
