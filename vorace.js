@@ -2,7 +2,7 @@
 
 if (!sessionStorage.getItem('alertDisplayed')) {
 
-    alert("Veuillez activer l'audio dans votre navigateur s'il vous plaît.");
+    alert("Veuillez activer l'audio dans les paramètres de votre navigateur s'il vous plaît.");
 
     sessionStorage.setItem('alertDisplayed', 'true');
 }
