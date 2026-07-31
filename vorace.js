@@ -2,7 +2,7 @@
 
 if (!sessionStorage.getItem('alertDisplayed')) {
 
-    alert("Veuillez activer l'audio dans les paramètres de votre navigateur s'il vous plaît. ⚠ Ce site est fait pour être visualisé sur un écran d'ordinateur.");
+    alert("Veuillez activer l'audio dans les paramètres de votre navigateur s'il vous plaît. ⚠ Ce site est fait pour être visualisé sur un écran d'ordinateur ou de tablette.");
 
     sessionStorage.setItem('alertDisplayed', 'true');
 
