@@ -16,6 +16,7 @@
 
 html {
     font-size: 16px;
+    overflow-y: auto; 
 }
 
 h1 {
@@ -54,7 +55,8 @@ a:visited {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    pointer-events: none;
+    /* pointer-events: none;*/
+    user-select: none;
 }
 
 article {
