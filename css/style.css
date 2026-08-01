@@ -57,6 +57,7 @@ a:visited {
     align-items: center;
     pointer-events: none;
     user-select: auto;
+    touch-action: pan-y;
 }
 
 article {
