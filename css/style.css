@@ -16,7 +16,6 @@
 
 html {
     font-size: 17px;
-    overflow-y: auto; 
 }
 
 h1 {
@@ -57,7 +56,8 @@ a:visited {
     align-items: center;
     pointer-events: none;
     user-select: auto;
-    touch-action: pan-y;
+    touch-action: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 article {
