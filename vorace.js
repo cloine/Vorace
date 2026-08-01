@@ -67,6 +67,9 @@ function draw() {
   }
 
 
+document.getElementById("layer content").addEventListener("wheel", myFunction);
 
-
-
+function myFunction() {
+  element.style.pointerEvents = "auto";
+  element.style.userSelect = "none";
+}
