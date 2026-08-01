@@ -67,7 +67,7 @@ function draw() {
   }
 
 
-document.getElementById("layer content").addEventListener("wheel", myFunction);
+document.getElementById("text").addEventListener("wheel", myFunction);
 
 function myFunction() {
   element.style.pointerEvents = "auto";

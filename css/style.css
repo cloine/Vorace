@@ -54,8 +54,8 @@ a:visited {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    pointer-events: none;
-    user-select: auto;
+    pointer-events: auto;
+    user-select: none;
     touch-action: pan-y;
 }
 
@@ -82,6 +82,8 @@ main {
 
 main canvas {
     height: 100%;
+    position: fixed;
+    cursor: crosshair;
 }
 
 header {
@@ -95,9 +97,5 @@ header {
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
-}
-
-canvas {
-    position: fixed;
 }
 
