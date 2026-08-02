@@ -12,6 +12,7 @@ let audioPlayer;
 let symmetry = 3;
 let angle = 360 / symmetry;
 
+
 function setup() {
 
 // KALEIDOSCOPE
@@ -28,13 +29,19 @@ function setup() {
 
 // AUDIOPLAYER
   audioPlayer = createAudio('./assets/Vorace_Cloine.mp3');
+  audioPlayer.pause();
   audioPlayer.attribute(
     'aria-description',
     'The playback speed of this audio player is controlled by the position of the mouse when pressed. The further to the right the mouse is, the faster the audio will play.'
   );
-  audioPlayer.autoplay();
+  //audioPlayer.autoplay();
   audioPlayer.loop();
   audioPlayer.attribute('style', 'display:none');
+  
+  let body = document.getElementById("main-container");
+  body.addEventListener(("mousedown" || "touchstart"), () => {
+    audioPlayer.play();
+  });
 }
 
 function draw() {
