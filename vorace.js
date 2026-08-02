@@ -1,6 +1,6 @@
 "use strict";
 
-/*
+
 if (!sessionStorage.getItem('alertDisplayed')) {
 
     alert("Veuillez activer l'audio dans les paramètres de votre navigateur s'il vous plaît. ⚠ Ce site est fait pour être visualisé sur un écran d'ordinateur ou de tablette.");
@@ -8,7 +8,7 @@ if (!sessionStorage.getItem('alertDisplayed')) {
     sessionStorage.setItem('alertDisplayed', 'true');
 
 }
-*/
+
 
 let audioPlayer;
 let symmetry = 3;
@@ -40,21 +40,17 @@ function setup() {
   audioPlayer.loop();
   audioPlayer.attribute('style', 'display:none');
 
-  const isTouchScreen = (
-  ('maxTouchPoints' in navigator && navigator.maxTouchPoints > 0) ||
-  ('msMaxTouchPoints' in navigator && navigator.msMaxTouchPoints > 0)
-  );
-
-  if (isTouchScreen) {
-    let event = "touchstart";
-  } else {
-    let event = "mousedown";
-  }
-
   let body = document.getElementById("main-container");
-  body.addEventListener(event, () => {
+  
+  body.addEventListener("touchstart", () => {
   audioPlayer.play();
   });
+
+  body.addEventListener("mousedown", () => {
+  audioPlayer.play();
+  });
+
+  
     
   }
 
